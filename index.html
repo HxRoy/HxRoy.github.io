@@ -1,0 +1,627 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Muse',
+    sidebar: {"position":"left","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: 'Author'
+    }
+  };
+</script>
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/"/>
+
+  <title> Hexo </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="">
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">Hexo</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle"></p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Startseite
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archiv
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/29/第一篇博文/" itemprop="url">
+                  Android 图片缓存框架-Universal Image Loader 源码分析（上篇）
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <time itemprop="dateCreated" datetime="2016-08-29T19:20:17+08:00" content="2016-08-29">
+              2016-08-29
+            </time>
+          </span>
+
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><img src="http://upload-images.jianshu.io/upload_images/438348-9013c9c726529e83.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="来源网络.png"></p>
+<p>不知道大家是不是注册了github，结果大部分的时间是在star项目，最多需要的时候百度个使用指南，代码复制粘贴，然后直接用一下开源项目。</p>
+<blockquote>
+<p>有个智者说过：不看源码的程序员不是个好程序员</p>
+</blockquote>
+<p>如果说有Android的开源框架是非分析不可的，那肯定就是<a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Universal Image Loader</a> （<strong>后面简称UIL</strong>）。因为无数人推荐过需要看看它的源码，所以我也就开始我的源码计划。</p>
+<p>按照惯例，需要把github地址给上&gt;&gt;&gt;&gt;<a href="https://github.com/nostra13/Android-Universal-Image-Loader" target="_blank" rel="external">Universal Image Loader</a> &lt;&lt;&lt;&lt;狂戳左边的这个链接。</p>
+<h1 id="1-项目简介"><a href="#1-项目简介" class="headerlink" title="1. 项目简介"></a>1. 项目简介</h1><h2 id="1-1-UIL简介"><a href="#1-1-UIL简介" class="headerlink" title="1.1 UIL简介"></a>1.1 UIL简介</h2><p>UIL是一个什么开源项目？按照Github上面的解释</p>
+<blockquote>
+<p>UIL是一个功能强大、灵活的、可以高度自定义化的组件，它可以实现图片加载，图片缓存和图片显示。</p>
+</blockquote>
+<p>简单来说，它就是可以实现我们异步和同步加载图片，同时能够做到图片的三级缓存。至于哪三级（不是你想的三级啊！），后面一一解密。</p>
+<h2 id="1-2-项目结构"><a href="#1-2-项目结构" class="headerlink" title="1.2 项目结构"></a>1.2 项目结构</h2><p><img src="http://upload-images.jianshu.io/upload_images/438348-dce3d78a381cabbc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="项目分包.png"><br>首先我们从这个项目的分包开始看起。参照上图，我们看到UIL主要分了三个包</p>
+<ul>
+<li>cache  缓存模块：包含内存缓存、磁盘缓存</li>
+<li>core 核心功能模块：包含图片解码、图片下载、图片显示、图片处理、图片操作任务以及一些配置模块等</li>
+<li>utils 工具模块：日志、图片大小等一些工具类</li>
+</ul>
+<p><img src="http://upload-images.jianshu.io/upload_images/438348-f7c67472a15d9b53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Structure.png"><br>主要的几大模块就是上面这个图所展示的，我们从我们最熟悉的ImageLoader类开始分析一下。</p>
+<h2 id="1-3-UIL-简单使用步骤"><a href="#1-3-UIL-简单使用步骤" class="headerlink" title="1.3 UIL 简单使用步骤"></a>1.3 UIL 简单使用步骤</h2><p>ImageLoader使用方法，最简单的就是以下几个步骤</p>
+<ol>
+<li>getInstance 获得ImageLoader的单例对象</li>
+<li>init 初始化它的配置信息</li>
+<li>displayImage / loadImage 输入图片路径和对应控件</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">// 1. 先获取一个单例</div><div class="line">ImageLoader imageLoader = ImageLoader.getInstance(); </div><div class="line"></div><div class="line">// 2. 给它配置它的多个参数（以下代码来自于UIL 自带的Sample）</div><div class="line">ImageLoaderConfiguration.Builder config = new ImageLoaderConfiguration.Builder(context);</div><div class="line">config.threadPriority(Thread.NORM_PRIORITY - 2);</div><div class="line">config.denyCacheImageMultipleSizesInMemory();</div><div class="line">config.diskCacheFileNameGenerator(new Md5FileNameGenerator());</div><div class="line">config.diskCacheSize(50 * 1024 * 1024); // 50 MiBconfig.tasksProcessingOrder(QueueProcessingType.LIFO);</div><div class="line">config.writeDebugLogs(); // Remove for release app</div><div class="line">imageLoader.init(config.build());</div></pre></td></tr></table></figure>
+<p>显示的方式有三种，大家看下面的代码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 3. 显示指定的Imageurl在相应ImageView上</div><div class="line">imageLoader.displayImage(imageUri, imageView);</div><div class="line"></div><div class="line">// 3. 也可以使用loadImage 方法，使用回调函数进行图片异步处理</div><div class="line">imageLoader.loadImage(imageUri, new SimpleImageLoadingListener()&#123; </div><div class="line">  @Override </div><div class="line">  public void onLoadingComplete(String imageUri, View view, Bitmap loadedImage) &#123; </div><div class="line">    // Do whatever you want with Bitmap </div><div class="line">  &#125;</div><div class="line">&#125;);</div><div class="line"></div><div class="line">// 3. 同步加载</div><div class="line">Bitmap bmp = imageLoader.loadImageSync(imageUri);</div></pre></td></tr></table></figure></p>
+<p>在这三个步骤结束后，你就不需要管图片的加载问题，UIL就会自动跟你加载的对应地址处的图片。</p>
+<p>那我们的模块分析就从ImageLoader这几个初始化步骤开始吧。</p>
+<h1 id="2-模块分析"><a href="#2-模块分析" class="headerlink" title="2 模块分析"></a>2 模块分析</h1><h2 id="2-1-ImageLoader模块"><a href="#2-1-ImageLoader模块" class="headerlink" title="2.1 ImageLoader模块"></a>2.1 ImageLoader模块</h2><p>前两个步骤，getInstance就是获取一个单例，没什么好特别讲的。init也就是将Config对象赋值给内部的变量。我们从displayImage方法开始研究。</p>
+<h3 id="2-1-1-displayImage方法"><a href="#2-1-1-displayImage方法" class="headerlink" title="2.1.1 displayImage方法"></a>2.1.1 displayImage方法</h3><blockquote>
+<p>loadImage和displayImage最后都会使用displayImage</p>
+</blockquote>
+<p>我们来看displayImage最终的方法的实现（为了我们专注主要功能，我刨去了一些检测null的代码，只留下主要功能！）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div></pre></td><td class="code"><pre><div class="line">public void displayImage(String uri, ImageAware imageAware, DisplayImageOptions options,</div><div class="line">		ImageSize targetSize, ImageLoadingListener listener, ImageLoadingProgressListener progressListener) &#123;</div><div class="line">	......</div><div class="line">	// 判断一下各项参数是不是空</div><div class="line">	// 如果Uri是空，那么就直接完成加载过程。</div><div class="line"></div><div class="line">	String memoryCacheKey = MemoryCacheUtils.generateKey(uri, targetSize);</div><div class="line">	engine.prepareDisplayTaskFor(imageAware, memoryCacheKey);</div><div class="line"></div><div class="line">	listener.onLoadingStarted(uri, imageAware.getWrappedView());</div><div class="line"></div><div class="line">	Bitmap bmp = configuration.memoryCache.get(memoryCacheKey);</div><div class="line">	if (bmp != null &amp;&amp; !bmp.isRecycled()) &#123;</div><div class="line">		if (options.shouldPostProcess()) &#123;</div><div class="line">			ImageLoadingInfo imageLoadingInfo = new ImageLoadingInfo(uri, imageAware, targetSize, memoryCacheKey,</div><div class="line">					options, listener, progressListener, engine.getLockForUri(uri));</div><div class="line">			ProcessAndDisplayImageTask displayTask = new ProcessAndDisplayImageTask(engine, bmp, imageLoadingInfo,</div><div class="line">					defineHandler(options));</div><div class="line">			if (options.isSyncLoading()) &#123;</div><div class="line">				displayTask.run();</div><div class="line">			&#125; else &#123;</div><div class="line">				engine.submit(displayTask);</div><div class="line">			&#125;</div><div class="line">		&#125; else &#123;</div><div class="line">			options.getDisplayer().display(bmp, imageAware, LoadedFrom.MEMORY_CACHE);</div><div class="line">			listener.onLoadingComplete(uri, imageAware.getWrappedView(), bmp);</div><div class="line">		&#125;</div><div class="line">	&#125; else &#123;</div><div class="line">		...</div><div class="line"></div><div class="line">		ImageLoadingInfo imageLoadingInfo = new ImageLoadingInfo(uri, imageAware, targetSize, memoryCacheKey,</div><div class="line">				options, listener, progressListener, engine.getLockForUri(uri));</div><div class="line">		LoadAndDisplayImageTask displayTask = new LoadAndDisplayImageTask(engine, imageLoadingInfo,</div><div class="line">				defineHandler(options));</div><div class="line">		if (options.isSyncLoading()) &#123;</div><div class="line">			displayTask.run();</div><div class="line">		&#125; else &#123;</div><div class="line">			engine.submit(displayTask);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>总的来说这个流程为以下几个步骤：</p>
+<ol>
+<li>生成指定的Key，将其与控件ImageAware一一对应</li>
+<li>从内存缓存中获取指定Key的Bitmap</li>
+<li>如果内存中没有Bitmap就通过engine启动LoadAndDisplayImageTask（这是个Runnable）</li>
+<li>如果内存中有Bitmap那么就通过engine启动ProcessAndDisplayImageTask（这也是个Runnable）</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/438348-b6e2a08ece0c11cb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="displayImage流程图.png"></p>
+<hr>
+<p>下面我们来看一下这两个Task具体做些什么。</p>
+<h3 id="2-1-2-ProcessAndDisplayImageTask"><a href="#2-1-2-ProcessAndDisplayImageTask" class="headerlink" title="2.1.2 ProcessAndDisplayImageTask"></a>2.1.2 ProcessAndDisplayImageTask</h3><p>这个Task的注释解释道，<strong>这是个处理并且显示图片的任务，显示任务的工作交给DisplayImageTask去做</strong>。因为这是一个Runnable对象。所以让我们来看一下它的run方法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">public void run() &#123;</div><div class="line">	BitmapProcessor processor = imageLoadingInfo.options.getPostProcessor();</div><div class="line">	Bitmap processedBitmap = processor.process(bitmap);</div><div class="line">	DisplayBitmapTask displayBitmapTask = new DisplayBitmapTask(processedBitmap, imageLoadingInfo, engine,</div><div class="line">			LoadedFrom.MEMORY_CACHE);</div><div class="line">	LoadAndDisplayImageTask.runTask(displayBitmapTask, imageLoadingInfo.options.isSyncLoading(), handler, engine);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>简单的来说，这个ProcessAndDisplayImageTask做的工作是以下四步：</p>
+<ol>
+<li>从ImageLoadingInfo的DisplayImageOption拿到BitmapProcess，<br><strong>getPostProcessor</strong>这个方法是取得一个在显示Display之前，在保存到MemoryCache之后的BitmapProcessor</li>
+<li>从BitmapProcess中调用process方法处理Bitmap</li>
+<li>新建一个<strong>DisplayBitmapTask</strong>，然后丢进静态方法runTask中去执行。</li>
+</ol>
+<blockquote>
+<p>runTask实现的工作，主要是Handler.post(Runnable)，具体的细节看源码</p>
+</blockquote>
+<p>总结来说ProcessAndDisplayImageTask主要是起到一个联合的过程，负责将BitmapProcessor和DisplayBitmapTask的按照顺序连接到一起。</p>
+<h3 id="2-1-3-LoadAndDisplayImageTask"><a href="#2-1-3-LoadAndDisplayImageTask" class="headerlink" title="2.1.3 LoadAndDisplayImageTask"></a>2.1.3 LoadAndDisplayImageTask</h3><p>前者ProcessAndDisplayImageTask主要是在内存缓存中有的时候执行的Task，那么在内存缓存中没有对应Bitmap的时候，LoadAndDisplayImageTask所执行的事务就会相对复杂一些。</p>
+<p>让我们也从run方法开始看起。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div></pre></td><td class="code"><pre><div class="line">@Override</div><div class="line">public void run() &#123;</div><div class="line">	if (waitIfPaused()) return;</div><div class="line">	if (delayIfNeed()) return;</div><div class="line"></div><div class="line">	ReentrantLock loadFromUriLock = imageLoadingInfo.loadFromUriLock;</div><div class="line">	...</div><div class="line">	loadFromUriLock.lock();</div><div class="line">	Bitmap bmp;</div><div class="line">	try &#123;</div><div class="line">		...</div><div class="line">		bmp = configuration.memoryCache.get(memoryCacheKey);</div><div class="line">		if (bmp == null || bmp.isRecycled()) &#123;</div><div class="line">			bmp = tryLoadBitmap();</div><div class="line">			if (bmp == null) return; // listener callback already was fired</div><div class="line">			...</div><div class="line"></div><div class="line">			if (options.shouldPreProcess()) &#123;</div><div class="line">				bmp = options.getPreProcessor().process(bmp);</div><div class="line">				...</div><div class="line">			&#125;</div><div class="line"></div><div class="line">			if (bmp != null &amp;&amp; options.isCacheInMemory()) &#123;</div><div class="line">				configuration.memoryCache.put(memoryCacheKey, bmp);</div><div class="line">			&#125;</div><div class="line">		&#125; else &#123;</div><div class="line">			loadedFrom = LoadedFrom.MEMORY_CACHE;</div><div class="line">		&#125;</div><div class="line"></div><div class="line">		if (bmp != null &amp;&amp; options.shouldPostProcess()) &#123;</div><div class="line">			bmp = options.getPostProcessor().process(bmp);</div><div class="line">			...</div><div class="line">		&#125;</div><div class="line">		...</div><div class="line">	&#125; catch (TaskCancelledException e) &#123;</div><div class="line">		fireCancelEvent();</div><div class="line">		return;</div><div class="line">	&#125; finally &#123;</div><div class="line">		loadFromUriLock.unlock();</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	DisplayBitmapTask displayBitmapTask = new DisplayBitmapTask(bmp, imageLoadingInfo, engine, loadedFrom);</div><div class="line">	runTask(displayBitmapTask, syncLoading, handler, engine);</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>这个函数的执行过程有点长，我们一步一步来</p>
+<ol>
+<li><p>这个线程的执行会判断是否需要等待，或者是否需要延迟对应时间。具体细节我们后面再分析。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">if (waitIfPaused()) return; </div><div class="line">if (delayIfNeed()) return;</div></pre></td></tr></table></figure>
+</li>
+<li><p>通过重入锁ReentrantLock 进行图片加载过程的锁定</p>
+</li>
+<li><p>先从内存缓存中获取对应Key值的Bitmap</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">bmp = configuration.memoryCache.get(memoryCacheKey);</div></pre></td></tr></table></figure>
+</li>
+<li><p>如果内存中没有读取到，那么就调用tryLoadBitmap继续从其他地方读取Bitmap，如果tryLoadBitmap没有能读取到Bitmap，那么就结束这次Task。如果读取到就继续下一步（tryLoadBitmap的过程我们后面再说）</p>
+</li>
+<li><p>对于不是从内存获取到的Bitmap对象，我们需要做两步，首先获取一个<strong>PreProcessor</strong>，也就是在Bitmap对象存入缓存前的BitmapProcessor（跟之前的PostProcessor类似），将图片进行一个预处理。<br>如果读取到了Bitmap，那么我们就将其他方式读取的Bitmap重新放入内存缓存中，这样方便下次进行这个图片获取时，能更加高效。因为图片的读取，首先是从内存中获取的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">if (options.shouldPreProcess()) &#123;</div><div class="line">        bmp = options.getPreProcessor().process(bmp);</div><div class="line">        ...</div><div class="line">&#125;</div><div class="line">if (bmp != null &amp;&amp; options.isCacheInMemory()) &#123;</div><div class="line">       configuration.memoryCache.put(memoryCacheKey, bmp);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>最后将bmp 也就是不管是从内存中读取的，还是通过tryLoadBitmap方法读取的，进行一个PostProcess的处理，也就是显示预处理。</p>
+</li>
+<li><p>最后执行DisplayBitmapTask，控件对应的Bitmap显示到控件上去。</p>
+</li>
+</ol>
+<hr>
+<h3 id="tryLoadBitmap"><a href="#tryLoadBitmap" class="headerlink" title="-tryLoadBitmap"></a>-tryLoadBitmap</h3><p>之前说到了UIL的缓存机制是采用了<strong>三级缓存机制</strong>。之前我们在LoadAndDisplayImageTask中，首先会从memoryCache中加载</p>
+<blockquote>
+<p>这个就是<strong>三级缓存机制</strong>中的第一级——<strong>内存</strong>。</p>
+</blockquote>
+<p>第二级和第三极就是在tryLoadBitmap中实现的。让我们进代码中看一下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">private Bitmap tryLoadBitmap() throws TaskCancelledException &#123;</div><div class="line">		Bitmap bitmap = null;</div><div class="line">		</div><div class="line">		File imageFile = configuration.diskCache.get(uri);</div><div class="line">		if (imageFile != null &amp;&amp; imageFile.exists() &amp;&amp; imageFile.length() &gt; 0) &#123;</div><div class="line">			loadedFrom = LoadedFrom.DISC_CACHE;</div><div class="line">			...</div><div class="line">			bitmap = decodeImage(Scheme.FILE.wrap(imageFile.getAbsolutePath()));</div><div class="line">		&#125;</div><div class="line">		if (bitmap == null || bitmap.getWidth() &lt;= 0 || bitmap.getHeight() &lt;= 0) &#123;</div><div class="line">			...</div><div class="line">			loadedFrom = LoadedFrom.NETWORK;</div><div class="line"></div><div class="line">			String imageUriForDecoding = uri;</div><div class="line">			if (options.isCacheOnDisk() &amp;&amp; tryCacheImageOnDisk()) &#123;</div><div class="line">				imageFile = configuration.diskCache.get(uri);</div><div class="line">				if (imageFile != null) &#123;</div><div class="line">					imageUriForDecoding = Scheme.FILE.wrap(imageFile.getAbsolutePath());</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			...</div><div class="line">			bitmap = decodeImage(imageUriForDecoding);</div><div class="line"></div><div class="line">			if (bitmap == null || bitmap.getWidth() &lt;= 0 || bitmap.getHeight() &lt;= 0) &#123;</div><div class="line">				fireFailEvent(FailType.DECODING_ERROR, null);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">	    return bitmap;</div><div class="line">	&#125;</div></pre></td></tr></table></figure></p>
+<p>我们看到会调用Configuration的diskCache.get(uri)方法，获取磁盘缓存中的获取对应的File，</p>
+<blockquote>
+<p>这个就是<strong>三级缓存机制</strong>中的第二级——<strong>磁盘</strong>。</p>
+</blockquote>
+<p>继续往下分析，由于磁盘缓存是用File对象进行映射的，这里需要调用decodeImage方法将File对应的图片解码成Bitmap对象。当磁盘中还是没有这个图片，那么显然需要去网络上下载。</p>
+<p>通过<strong>tryCacheImageOnDisk</strong>方法将网络上的资源，缓存到磁盘中。然后再从DiskCache中去取出File对象，继续解码成Bitmap对象。最后成功就返回。</p>
+<hr>
+<h3 id="tryCacheImageOnDisk-缓存图片到Disk中"><a href="#tryCacheImageOnDisk-缓存图片到Disk中" class="headerlink" title="-tryCacheImageOnDisk 缓存图片到Disk中"></a>-tryCacheImageOnDisk 缓存图片到Disk中</h3><p>在磁盘中没有读取到，UIL就需要从网络上去请求资源了。</p>
+<blockquote>
+<p>这就是UIL的<strong>三级缓存机制</strong>中的第三级——网络请求</p>
+</blockquote>
+<p>我们看代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">private boolean tryCacheImageOnDisk() throws TaskCancelledException &#123;</div><div class="line">	...</div><div class="line">	boolean loaded;</div><div class="line">	...</div><div class="line">	loaded = downloadImage();</div><div class="line">	if (loaded) &#123;</div><div class="line">		int width = configuration.maxImageWidthForDiskCache;</div><div class="line">		int height = configuration.maxImageHeightForDiskCache;</div><div class="line">		if (width &gt; 0 || height &gt; 0) &#123;</div><div class="line">			...</div><div class="line">			resizeAndSaveImage(width, height); // TODO : process boolean result</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">	...</div><div class="line">	return loaded;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>调用<strong>downloadImage</strong>方法下载图片，然后对图片进行长宽的处理，设置为缓存中的最大值再存入磁盘缓存DiskCache中。</p>
+<p>而downloadImage主要就是调用<strong>ImageDownloader</strong>进行数据的下载，然后保存到DiskCache中。这个<strong>ImageDownloader</strong>具体细节我们后面具体分析。这里我们只要知道它是一个下载器的接口，可以自行实现将Uri网络请求得到图片流。</p>
+<h3 id="2-1-4-小结"><a href="#2-1-4-小结" class="headerlink" title="2.1.4 小结"></a>2.1.4 小结</h3><p>到这里我们对ImageLoader的一个基本流程大概介绍完了，我们来小结一下。</p>
+<p>UIL的整个处理逻辑从<strong>ImageLoader</strong>这个类的<strong>displayImage</strong>方法开始， 它主要工作就是在内存中获取对应Key值的Bitmap，然后通过获取结果，丢给<strong>ImageLoaderEngine</strong>线程池内去执行不同类型的任务，其中主要两个任务就是<strong>ProcessAndDisplayImageTask</strong>和<strong>LoadAndDisplayImageTask</strong>。</p>
+<p>前者是内存有就Bitmap就直接通过<strong>BitmapProcessor</strong>处理然后丢给<strong>DisplayTask</strong>任务去显示。后者是没有内存的时候就需要开启<strong>三级缓存机制</strong>，进行逐级的加载。</p>
+<blockquote>
+<p>三级缓存指的是：内存、磁盘、网络</p>
+</blockquote>
+<p>分别通过MemoryCache、DiskCache和ImageDownloader三个去实现了。</p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>第一次写源码的分析，有什么不足请批评指正。</p>
+<p>后面还会继续跟进分析一下UIL的缓存的实现方式，个人觉得这个模块还是蛮有意思的。</p>
+<p>同时我觉得源码嘛，还是要自己对着代码看，光看这个文章还是会一头雾水的。而且不要陷于代码的细节，执着于某个细节是怎么实现的，忽略了主干的分析，最后看得会很头大的。</p>
+<p>这里安利之前看到的介绍代码阅读的文章，《<a href="http://www.jianshu.com/p/3e6d4c520719" target="_blank" rel="external">代码阅读的姿势</a>》</p>
+<blockquote>
+<p>纸上得来终觉浅，绝知此事要躬行</p>
+</blockquote>
+<hr>
+<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><blockquote>
+<ol>
+<li><a href="http://a.codekk.com/detail/Android/huxian99/Android%20Universal%20Image%20Loader%20%E6%BA%90%E7%A0%81%E5%88%86%E6%9E%90" target="_blank" rel="external">Android Universal Image Loader 源码分析</a></li>
+<li><a href="https://github.com/nostra13/Android-Universal-Image-Loader/blob/master/README.md" target="_blank" rel="external">Android Universal Image Loader Github readme</a></li>
+</ol>
+</blockquote>
+<hr>
+<p><strong>尊重原创，转载请注明出处</strong></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+  </section>
+
+  
+
+
+          </div>
+          
+
+
+          
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="John Doe" />
+          <p class="site-author-name" itemprop="name">John Doe</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-name">Artikel</span>
+            </a>
+          </div>
+
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">Tags</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+
+<div class="powered-by">
+  Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a>
+</div>
+
+<div class="theme-info">
+  Theme -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Muse
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
